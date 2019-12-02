@@ -17,8 +17,75 @@ body {
   margin: 0;
 }
 
-body {
+.background {
+  display: inline-block;
+  position: relative;
+}
+
+.background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: url("./assets/images/bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat-y;
+  z-index: 1;
+}
+
+.home {
+  position: absolute;
+  z-index: -1;
+  max-width: 40vw;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.right {
+  position: absolute;
+  z-index: -999;
+  max-width: 40vw;
+  top: 1rem;
+  right: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .right {
+    top: 4rem;
+    right: 4rem;
+  }
+
+  .background:after {
+    background-size: cover;
+  }
+}
+
+.left {
+  position: absolute;
+  z-index: -1;
+  max-width: 40vw;
+  top: 1rem;
+  left: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .left {
+    top: 4rem;
+    left: 4rem;
+  }
 }

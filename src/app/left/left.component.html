@@ -1,0 +1,33 @@
+<section class="container-fluid fullpage">
+  <app-floatter
+    [src]="floatterSrc"
+    [alt]="floatterAlt"
+    [position]="floatterPosition"
+  ></app-floatter>
+  <div class="row fit" fxLayoutAlign="center center">
+    <div
+      class="col-12 col-md-6"
+      fxLayoutAlign="center center"
+      fxLayoutAlign.gt-sm="end center"
+    >
+      <div
+        class="m-3"
+        fxFlex="80%"
+        fxFlex.sm="60%"
+        fxFlex.gt-md="70%"
+        fxFlex.xl="60%"
+      >
+        <img [src]="imageSrc" [alt]="imageAlt" />
+      </div>
+    </div>
+    <div
+      class="col-12 col-md-6"
+      fxLayoutAlign="center center"
+      fxLayoutAlign.gt-sm="start center"
+    >
+      <div class="m-3" fxFlex="90%" fxFlex.gt-md="70%" class="text-justify">
+        {{ text }}
+      </div>
+    </div>
+  </div>
+</section>
