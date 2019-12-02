@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities"; // add css utilities
+@import "./assets/styles/reset";
+
+html,
+body {
+  font-family: "Scope One", serif;
+
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+
+body {
+  background: url("./assets/images/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

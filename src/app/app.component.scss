@@ -1,0 +1,23 @@
+.fullpage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.float-top {
+  position: absolute;
+  z-index: -1;
+  max-width: 40vw;
+}
+
+.fit {
+  flex: 2;
+  overflow: auto;
+  font-size: 1.15rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
