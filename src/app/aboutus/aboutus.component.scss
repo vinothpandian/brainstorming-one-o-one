@@ -1,0 +1,33 @@
+.fullpage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.fit {
+  flex: 2;
+  overflow: auto;
+  font-size: 1.15rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.image {
+  width: 80%;
+}
+
+.name {
+  margin-top: 1.5rem;
+  font-size: 1.875rem;
+  line-height: 1.4375rem;
+}
+
+.detail {
+  font-size: 1.25rem;
+  line-height: 1rem;
+}
