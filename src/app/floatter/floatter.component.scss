@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/functions";
+@import "../../assets/styles/variables";
+@import "~bootstrap/scss/mixins";
+
+@mixin floatter {
+  position: absolute;
+  z-index: -1;
+  max-width: 40vw;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.home {
+  @include floatter();
+}
+
+.right {
+  @include floatter();
+  right: 1rem;
+}
+
+@include media-breakpoint-up(md) {
+  .left {
+    top: 4rem;
+    left: 4rem;
+  }
+
+  .right {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+
+.left {
+  @include floatter();
+  left: 1rem;
+}
